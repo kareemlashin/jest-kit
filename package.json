@@ -1,0 +1,27 @@
+{
+  "name": "jest-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./main.js",
+  "dependencies": {
+    "@types/jest": "^27.4.1",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "scripts": {
+    "test": "jest --watchAll --coverage"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
+  },
+  "author": "",
+  "license": "ISC",
+  "majestic": {
+    "setupFilesAfterEnv": ["./jest.js"],
+    "jestScriptPath": "./node_modules/jest/bin/jest.js"
+  },
+  "type": "module"
+}
